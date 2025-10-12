@@ -1,4 +1,5 @@
 # pawn-plus-timer
+Sorry if the English is not well understood, I am using a translator.
 
 Credits:
 XCore/Zxuan
@@ -80,5 +81,5 @@ timer defer_time[0](arg)
 }
 ```
 ## Thanks to
-- [4sheed](//github.com/r4sheed) - for the player code section that improves [improved code for player](https://github.com/r4sheed/pawn-plus-tasks))
+- [4sheed](//github.com/r4sheed) - for [improved code for player](https://github.com/r4sheed/pawn-plus-tasks)
 - [IllidanS4](//github.com/IllidanS4) — for creating [PawnPlus](//github.com/IS4Code/PawnPlus), the core library behind this include.
