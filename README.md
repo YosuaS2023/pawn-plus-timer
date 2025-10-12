@@ -17,6 +17,10 @@ Jadi sekarang saya mengunakan kode milik 4sheed untuk bagian player nya.
 
 CATATAN: ini belum bisa mengunakan array. hanya bool/int/float
 
+
+> [!NOTE]
+> Can be used in OpenMP as well as SAMP
+> 
 ## Installation
 Include in your code and begin using the library:
 
