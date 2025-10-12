@@ -36,19 +36,47 @@ task Name[1000]()
     // code
 }
 ```
-> [!WARNING]
-> Tasks can only take `playerid` for `ptask`. Adding any other parameters will cause compiler errors because the system runs them automatically and cannot handle extra arguments.
 
 ### Player Tasks
+> [!WARNING]
+> ptask can only take a parameter for `playerid`. beyond that, it doesn't work.
 
 Use the `ptask` macro to define player-specific tasks. These run at the specified interval for each connected player.
 
 ```pawn
-#include <pp-tasks>
 
 ptask PlayerTaskName[interval](playerid)
 {
     // This task executes for each connected player every <interval> milliseconds.
+}
+```
+
+### Defer / Repeat / Stop
+> [!WARNING]
+> For now, they can only be on the `integer`, `bool`, and `float` parameters.
+
+```pawn
+new timerr;
+main()
+{
+    timerr = repeat ABC[2000](65, 1022.2293);
+    repeat RAWR[1000](123, 23.0);
+    defer defer_time[3000](123);
+}
+
+timer ABC[0](int, Float:floating) 
+{
+    printf("ABC %i, %f", int, floating);
+}
+
+timer RAWR[1000](ppp, Float:rawr)
+{
+    printf("RAWR %i, %f", ppp, rawr);
+}
+timer defer_time[0](arg) 
+{
+    printf("defer_time(%i)", arg);
+    stop timerr;
 }
 ```
 ## Thanks to
